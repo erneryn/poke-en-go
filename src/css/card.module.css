@@ -1,0 +1,9 @@
+.column{
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.card{
+    background-color: tomato;
+}

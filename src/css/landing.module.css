@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+}
+.buttonload{
+    color: rgba(22, 28, 43, 0.96);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: solid 4px rgba(22, 28, 43, 0.96);
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: transparent
+}

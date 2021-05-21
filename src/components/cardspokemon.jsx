@@ -6,9 +6,8 @@ const CardsPokemon = ({pokemonData})=>{
     return(
         <div className={styles.row}>
             {   
-                pokemonData.map(e=> <CardPokemon pokemon={e}/>)
-            }
-            
+               pokemonData && pokemonData.map((e,idx)=> <CardPokemon key={idx} pokemon={e}/>)
+            } 
         </div>
     )
 }

@@ -16,7 +16,7 @@ export const getDataPokemon = (params)=>{
     let queryParams = `?limit=${params.limit}&offset=${params.offset}`
     return dispatch => {
         Axios.get(api_pokemon+queryParams)
-        .then(async res=>{
+        .then(res=>{
             let pokeName = res.data.results
             let nextUrl = res.data.next
             dispatch(SuccessGetPokemon(pokeName))

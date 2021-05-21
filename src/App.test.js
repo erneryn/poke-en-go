@@ -2,24 +2,24 @@ import React from 'react';
 import App from './App';
 import Landing from './pages/landing'
 import { shallow, mount } from 'enzyme'
-import store from './store'
-import { Provider } from 'react-redux'
-import { storeFactory } from '../testUtils'
-import toJson from 'enzyme-to-json'
+import { findByTestAttr, storeFactory } from './testUtils'
+import {  createMemoryHistory } from 'history'
+import { Router } from 'react-router-dom'
 
 const setup = ()=>{
-  const store = storeFactory()
+  const history = createMemoryHistory()
   return mount(
-    <Provider store={store}>
+    <Router history={history}>
       <App/>
-    </Provider>
+    </Router>
   )
 }
 
 describe("Test Render Without error",()=>{
   it("render APP without crashing", ()=>{
     const wrapper = setup();
-    const appComponent = wrapper.find(`[data-test="app-component"]`)
+    const appComponent = findByTestAttr(wrapper,'app-component')
     expect(appComponent).toHaveLength(1)
   })
 })
+

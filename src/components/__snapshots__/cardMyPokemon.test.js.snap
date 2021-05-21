@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card my pokemon to match snapshot 1`] = `
+<div
+  className="item"
+  data-test="component-cardmypokemon"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="head"
+    >
+      <div
+        className="name"
+      />
+      <div
+        className="nickname"
+      />
+    </div>
+    <div>
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="footer"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
